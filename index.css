@@ -1,52 +1,25 @@
-#vegas {
-  width: 100vw;
-  height: 100vh;
+* {
+  font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
 }
 
-body {
-  font-size: 1rem;
-}
-main {
-  flex: 1;
+.contents {
   overflow: hidden;
 }
 
-.max-extend {
-  max-width: 1920px;
-  margin: 0 auto;
-  width: 100%;
+#vegas {
+  width: 60vw;
+  height: 70vh;
 }
 
-.top-main {
-  background-color: #f6f8f9;
+.op {
+  margin-top: 5%;
+  float: left;
+  text-align: center;
+  margin-left: 10%;
 }
 
-.siteWrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.main-pv .pv-left {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  padding-left: 40px;
-}
-
-.main-pv .pv-left .tate {
+.tate {
+  font-size: 40px;
   writing-mode: vertical-rl;
-  font-family: "Noto Serif JP", serif;
-}
-
-@media screen and (max-width: 768px) .main-pv {
-  width: 100%;
-  padding-bottom: 140px;
-  padding-top: 67px !important;
-}
-
-.main-pv .pv-right {
-  margin-left: 24px;
-  width: calc(75% - 24px);
+  text-align: center;
 }
