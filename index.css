@@ -1,7 +1,11 @@
 * {
   font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+  z-index: 0;
 }
 
+main {
+  background-color: #ffffee;
+}
 .contents {
   overflow: hidden;
 }
@@ -9,6 +13,7 @@
 #vegas {
   width: 60vw;
   height: 70vh;
+  z-index: 1;
 }
 
 .op {
@@ -22,4 +27,25 @@
   font-size: 40px;
   writing-mode: vertical-rl;
   text-align: center;
+}
+
+.introduction {
+  margin-top: 5%;
+  text-align: center;
+}
+
+p {
+  font-size: 30px;
+}
+
+.fade_off {
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+.fade_on {
+  opacity: 1;
 }

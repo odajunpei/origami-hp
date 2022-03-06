@@ -23,3 +23,39 @@ $(function() {
 				//timer:false,// プログレスバーを非表示したい場合はこのコメントアウトを外してください
   });
 });
+
+// const scrollEvent = function() {
+//   window.addEventListener("scroll", function () {
+//     //↓処理
+//     let scrollValue = window.pageYOffset;
+//     //↓要素
+//     let scrollEle = document.querySelector(".introduction");
+//     //↓取得した要素のtop値の取得 + スクロール量
+//     let scrollTop = scrollEle.getBoundingClientRect().top + scrollValue;
+//     //↓画面の高さを取得
+//     let windowHeight = window.innerHeight;
+//     // はみ出させる値
+//     let value = 100;
+//     // 条件設定
+//     if (scrollValue > scrollTop - windowHeight + value) {
+//       scrollEle.classList.add("js-fade");
+//     };
+//   });
+// };
+
+// scrollEvent();
+
+$(function(){
+    $(window).scroll(function (){
+      $(".introduction").each(function(){
+        var imgPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > imgPos - windowHeight + windowHeight/4){
+          $(this).addClass("fade_on");
+        } else {
+          $(this).removeClass("fade_on");
+        }
+      });
+    });
+  });
